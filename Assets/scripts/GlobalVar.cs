@@ -10,12 +10,23 @@
 // RETURNS: 0
 //
 /////////////////////////////////////////////////////////
-
 using UnityEngine;
 using System;
 
 public class GlobalVar : MonoBehaviour
 {
+    public static bool LabDoorUnlocked = false;
+
+    public static bool area1Entered = false;
+    public static bool area2Entered = false;
+    public static bool area3Entered = false;
+    public static bool area4Entered = false;
+    public static bool area5Entered = false;
+
+    public static bool NAR12Played = false;
+
+    public static bool narratorCutoff = false;
+
     public static bool breakerFail = false;
     public static bool nukeImminent = false;
     public static bool doorOpen = false;
@@ -50,6 +61,8 @@ public class GlobalVar : MonoBehaviour
 
     public int[] keyPadDigits;
 
+    public static AudioManager[] speakers;
+
     void Awake()
     {
         // Singleton pattern
@@ -62,6 +75,17 @@ public class GlobalVar : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        GameObject[] speakerObjects = GameObject.FindGameObjectsWithTag("Speaker");
+
+        speakers = new AudioManager[speakerObjects.Length];
+        for (int i = 0; i < speakerObjects.Length; i++)
+        {
+            speakers[i] = speakerObjects[i].GetComponent<AudioManager>();
         }
     }
     public void UpdateNumberAtIndex(int newValue)

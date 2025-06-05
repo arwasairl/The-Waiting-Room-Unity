@@ -33,6 +33,7 @@ public class Clock : MonoBehaviour
         clockDisplay = GetComponent<TextMeshPro>();
         ps.Stop();
         ps.gameObject.SetActive(false);
+
     }
 
     void OnEnable()

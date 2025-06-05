@@ -35,7 +35,6 @@ namespace System.Collections
 
         private IEnumerator FadeOutAndDisappear()
         {
-            gameObject.SetActive(false);
             float elapsedTime = 0f;
 
             while (elapsedTime < fadeDuration)
@@ -48,6 +47,8 @@ namespace System.Collections
 
                 yield return null;
             }
+
+            gameObject.SetActive(false);
         }
     }
 
