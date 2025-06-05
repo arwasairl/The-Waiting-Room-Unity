@@ -6,3 +6,4 @@ Logs/
 .vs/
 obj/
 Library/
+*.DS_Store

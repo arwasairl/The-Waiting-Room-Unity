@@ -37,15 +37,13 @@ public class Detection : MonoBehaviour
 
             foreach (AudioSource audioSource in allAudioSources)
             {
-                if (audioSource.gameObject.name != "lightBuzzSFX")
-                {
-                    audioSource.Stop();
-                }
+                audioSource.Stop();
             }
-            GameObject otherObject = GameObject.Find("roomSpeaker");
-            if (otherObject != null)
+            GameObject roomSpeaker = GameObject.Find("roomSpeaker");
+            if (roomSpeaker != null)
             {
-                AudioSource otherAudioSource = otherObject.GetComponent<AudioSource>();
+                AudioSource otherAudioSource = roomSpeaker.GetComponent<AudioSource>();
+
                 if (otherAudioSource != null)
                 {
                     AudioClip newClip = Resources.Load<AudioClip>("Audio/nukeWarning");
@@ -66,15 +64,12 @@ public class Detection : MonoBehaviour
 
             foreach (AudioSource audioSource in allAudioSources)
             {
-                if (audioSource.gameObject.name != "lightBuzzSFX")
-                {
-                    audioSource.Stop();
-                }
+                audioSource.Stop();
             }
-            GameObject otherObject = GameObject.Find("audtioScript");
-            if (otherObject != null)
+            GameObject roomSpeaker = GameObject.Find("roomSpeaker");
+            if (roomSpeaker != null)
             {
-                AudioSource otherAudioSource = otherObject.GetComponent<AudioSource>();
+                AudioSource otherAudioSource = roomSpeaker.GetComponent<AudioSource>();
                 if (otherAudioSource != null)
                 {
                     AudioClip newClip = Resources.Load<AudioClip>("Audio/nukeWarning");

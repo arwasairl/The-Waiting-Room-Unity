@@ -13,11 +13,12 @@
 
 using UnityEngine;
 using TMPro;
+using System.Numerics;
 
 public class KeypadDigits : MonoBehaviour
 {
     public TextMeshPro textMesh;
-
+    public static BigInteger keypadvalue;
     void Start()
     {
         UpdateText();
@@ -46,6 +47,14 @@ public class KeypadDigits : MonoBehaviour
         if (result.Length > 4)
         {
             result = result.Substring(result.Length - 4);
+        }
+
+        string combinedString = string.Join("", GlobalVar.Instance.keyPadDigits);
+        keypadvalue = BigInteger.Parse(combinedString);
+        Debug.Log(keypadvalue);
+        if (keypadvalue == 1243)
+        {
+            LabdoorUnlock.Instance.Unlock();
         }
 
         textMesh.text = result;

@@ -17,6 +17,7 @@ public class DoorLock : MonoBehaviour
 {
     public static DoorLock Instance;
     private AudioSource audioSource;
+
     void Awake()
     {
         Instance = this;
@@ -31,7 +32,6 @@ public class DoorLock : MonoBehaviour
             limits.min = 0;
             limits.max = 0;
             hinge.limits = limits;
-
             hinge.useLimits = true;
         }
     }
@@ -48,6 +48,21 @@ public class DoorLock : MonoBehaviour
             hinge.useLimits = true;
             audioSource = GetComponent<AudioSource>();
             audioSource.Play();
+            foreach (AudioManager am in GlobalVar.speakers)
+            {
+                if (am.audiosource.isPlaying == true)
+                {
+                    GlobalVar.narratorCutoff = true;
+                    am.audiosource.Stop();
+                    am.PlayAudio(AudioType.NARHEY, 0.50f);
+                    GlobalVar.narratorCutoff = false;
+                    StartCoroutine(am.WaitForAudioToEnd());
+                }
+                else
+                {
+                    am.PlayAudio(AudioType.NAR7, 0.60f);
+                }
+            }
         }
     }
 
