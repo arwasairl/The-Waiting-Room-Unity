@@ -32,6 +32,8 @@ All C# scripts are compiled with IL2CPP.
 &nbsp;&nbsp;&nbsp;&nbsp;∟📂XRI (XR Interaction Toolkit)<br />
 
 # Important notes
+- This has primarily been tested on the **Oculus APK platform only** and not on Windows or Linux.
+- Support for the keyboard and other controllers while in game is not supported.
 - MSAA is disabled on Android (AKA Oculus) platforms for performance. MSAA is enabled on PC OpenXR platforms only.
 - This repository is very large and when cloning or forking you may run into an issue where you need to use Git LFS. Configure Git LFS to track *.EXR files on the client and then push to your forked repo to prevent this.
 - A commit or push may exceed GitHub's 2GB limit. Use GitLab where the free limit is 10GB.
