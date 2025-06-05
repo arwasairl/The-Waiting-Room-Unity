@@ -3,3 +3,7 @@ Temp/
 .vscode/
 .utmp/
 Logs/
+.vs/
+obj/
+*.png
+Library/

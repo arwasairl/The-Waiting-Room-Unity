@@ -1,3 +1,16 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Head collider handler
+// DEFINED EXTERNS: 0
+// RETURNS: line 34 return combinedNormal (Vector3), line 41 (void return)
+//
+/////////////////////////////////////////////////////////
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;

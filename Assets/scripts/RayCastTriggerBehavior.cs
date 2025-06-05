@@ -1,3 +1,15 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Raycaster and trigger handler
+// DEFINED EXTERNS: 0
+// RETURNS: line 51 (void return), line 118 (yield return null)
+//
+/////////////////////////////////////////////////////////
 
 using System.Collections;
 using System.Linq;
@@ -95,11 +107,9 @@ public class RayCastTriggerBehavior : MonoBehaviour
             buttonA.isAnimating = true;
         }
 
-        // Instantly move down
         Vector3 depressedPos = buttonA.originalLocalPosition + new Vector3(0, 0, -pressDepth);
         target.localPosition = depressedPos;
 
-        // Slowly return to original position
         float elapsed = 0f;
         while (elapsed < returnDuration)
         {
@@ -124,7 +134,7 @@ public class RayCastTriggerBehavior : MonoBehaviour
 
             if (target.CompareTag("Switch"))
             {
-                string switchName = target.name.ToLower(); // e.g., "switch1", "switch2"
+                string switchName = target.name.ToLower();
 
                 switch (switchName)
                 {

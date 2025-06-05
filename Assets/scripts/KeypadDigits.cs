@@ -1,9 +1,22 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Keypad digit display updater
+// DEFINED EXTERNS: 0
+// RETURNS: 0
+//
+/////////////////////////////////////////////////////////
+
 using UnityEngine;
 using TMPro;
 
 public class KeypadDigits : MonoBehaviour
 {
-    public TextMeshPro textMesh; // Assign in Inspector
+    public TextMeshPro textMesh;
 
     void Start()
     {
@@ -20,7 +33,6 @@ public class KeypadDigits : MonoBehaviour
     {
         int[] array = GlobalVar.Instance.keyPadDigits;
 
-        // Get the last 4 elements or fewer
         int count = Mathf.Min(array.Length, 4);
         int startIndex = array.Length - count;
 
@@ -29,11 +41,8 @@ public class KeypadDigits : MonoBehaviour
         {
             result += array[i].ToString();
         }
-
-        // Pad with leading zeros to ensure 4 characters
         result = result.PadLeft(4, '0');
 
-        // Trim if over 4 characters (just in case)
         if (result.Length > 4)
         {
             result = result.Substring(result.Length - 4);
