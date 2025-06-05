@@ -11,23 +11,23 @@ This contains the scripts, sounds, textures, and objects for the Waiting Room. T
 - 24 core CPU for lightmap compression and code compilation
 
 # Directory structure
-📂Assets
-  ∟📂fonts (contains fonts in TTF and TextMeshPro compatible fonts)
-  ∟📂materials (contains materials for objects)
-  ∟📂objects (contains FBX 3d models)
-  ∟📂prefabs (contains an explosion prefab)
-  ∟📂Resources
-    ∟📂Audio (contains all audio, SFX, and voicelines)
-  ∟📂Samples (contains XR Interaction Toolkit samples)
-  ∟📂Scenes (contains the scene)
-  ∟📂scripts (contains all scripts)
-  ∟📂Settings (contains settings for the URP renderer and other misc. rendering features)
-  ∟📂TextMesh Pro (textmeshpro)
-  ∟📂textures (contains all textures for the game, 4K (4096) default resolution (!!) the game downscales it to 512, 1024, and 2048 where necessary)
-  ∟📂TutorialInfo (not relevant)
-  ∟📂Vefects (VFX for fire)
-  ∟📂XR (XR Interaction Toolkit)
-  ∟📂XRI (XR Interaction Toolkit)
+📂Assets<br />
+  ∟📂fonts (contains fonts in TTF and TextMeshPro compatible fonts)<br />
+  ∟📂materials (contains materials for objects)<br />
+  ∟📂objects (contains FBX 3d models)<br />
+  ∟📂prefabs (contains an explosion prefab)<br />
+  ∟📂Resources<br />
+    ∟📂Audio (contains all audio, SFX, and voicelines)<br />
+  ∟📂Samples (contains XR Interaction Toolkit samples)<br />
+  ∟📂Scenes (contains the scene)<br />
+  ∟📂scripts (contains all scripts)<br />
+  ∟📂Settings (contains settings for the URP renderer and other misc. rendering features)<br />
+  ∟📂TextMesh Pro (textmeshpro)<br />
+  ∟📂textures (contains all textures for the game, 4K (4096) default resolution (!!) the game downscales it to 512, 1024, and 2048 where necessary)<br />
+  ∟📂TutorialInfo (not relevant)<br />
+  ∟📂Vefects (VFX for fire)<br />
+  ∟📂XR (XR Interaction Toolkit)<br />
+  ∟📂XRI (XR Interaction Toolkit)<br />
 
 # Important notes
 - MSAA is disabled on Android (AKA Oculus) platforms for performance. MSAA is enabled on PC OpenXR platforms only.
