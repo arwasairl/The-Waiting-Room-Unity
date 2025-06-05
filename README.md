@@ -12,22 +12,22 @@ This contains the scripts, sounds, textures, and objects for the Waiting Room. T
 
 # Directory structure
 📂Assets<br />
-  ∟📂fonts (contains fonts in TTF and TextMeshPro compatible fonts)<br />
-  ∟📂materials (contains materials for objects)<br />
-  ∟📂objects (contains FBX 3d models)<br />
-  ∟📂prefabs (contains an explosion prefab)<br />
-  ∟📂Resources<br />
-    ∟📂Audio (contains all audio, SFX, and voicelines)<br />
-  ∟📂Samples (contains XR Interaction Toolkit samples)<br />
-  ∟📂Scenes (contains the scene)<br />
-  ∟📂scripts (contains all scripts)<br />
-  ∟📂Settings (contains settings for the URP renderer and other misc. rendering features)<br />
-  ∟📂TextMesh Pro (textmeshpro)<br />
-  ∟📂textures (contains all textures for the game, 4K (4096) default resolution (!!) the game downscales it to 512, 1024, and 2048 where necessary)<br />
-  ∟📂TutorialInfo (not relevant)<br />
-  ∟📂Vefects (VFX for fire)<br />
-  ∟📂XR (XR Interaction Toolkit)<br />
-  ∟📂XRI (XR Interaction Toolkit)<br />
+&nbsp;&nbsp;&nbsp;∟📂fonts (contains fonts in TTF and TextMeshPro compatible fonts)<br />
+&nbsp;&nbsp;&nbsp;∟📂materials (contains materials for objects)<br />
+&nbsp;&nbsp;&nbsp;∟📂objects (contains FBX 3d models)<br />
+&nbsp;&nbsp;&nbsp; ∟📂prefabs (contains an explosion prefab)<br />
+&nbsp;&nbsp;&nbsp;∟📂Resources<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∟📂Audio (contains all audio, SFX, and voicelines)<br />
+&nbsp;&nbsp;&nbsp;∟📂Samples (contains XR Interaction Toolkit samples)<br />
+&nbsp;&nbsp;&nbsp;∟📂Scenes (contains the scene)<br />
+&nbsp;&nbsp;&nbsp;∟📂scripts (contains all scripts)<br />
+&nbsp;&nbsp;&nbsp;∟📂Settings (contains settings for the URP renderer and other misc. rendering features)<br />
+&nbsp;&nbsp;&nbsp;∟📂TextMesh Pro (textmeshpro)<br />
+&nbsp;&nbsp;&nbsp;∟📂textures (contains all textures for the game, 4K (4096) default resolution (!!) the game downscales it to 512, 1024, and 2048 where necessary)<br />
+&nbsp;&nbsp;&nbsp;∟📂TutorialInfo (not relevant)<br />
+&nbsp;&nbsp;&nbsp;∟📂Vefects (VFX for fire)<br />
+&nbsp;&nbsp;&nbsp;∟📂XR (XR Interaction Toolkit)<br />
+&nbsp;&nbsp;&nbsp;∟📂XRI (XR Interaction Toolkit)<br />
 
 # Important notes
 - MSAA is disabled on Android (AKA Oculus) platforms for performance. MSAA is enabled on PC OpenXR platforms only.
