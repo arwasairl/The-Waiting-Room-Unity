@@ -1,5 +1,5 @@
 # The Waiting Room Unity
-This contains the scripts, sounds, textures, and objects for the Waiting Room. Tested and compiled with Unity 6000.0.46f1.
+This contains the scripts, sounds, textures, and objects for the Waiting Room. Tested and compiled with Unity 6000.0.46f1.<br />
 All C# scripts are compiled with IL2CPP.
 
 # Recommendations
