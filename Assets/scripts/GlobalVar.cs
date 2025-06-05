@@ -1,3 +1,16 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Global variables
+// DEFINED EXTERNS: A lot
+// RETURNS: 0
+//
+/////////////////////////////////////////////////////////
+
 using UnityEngine;
 using System;
 

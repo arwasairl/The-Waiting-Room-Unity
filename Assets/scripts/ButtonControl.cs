@@ -1,3 +1,17 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Keypad animation player
+// DEFINED EXTERNS: 0
+// RETURNS: 0
+//
+/////////////////////////////////////////////////////////
+
+
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -29,7 +43,6 @@ public class ButtonControl : MonoBehaviour
             isPressed = false;
         }
 
-        // Clamp the button position
         Vector3 clampedPosition = transform.localPosition;
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, initialLocalPosition.y - maxPressDistance, initialLocalPosition.y);
         transform.localPosition = clampedPosition;

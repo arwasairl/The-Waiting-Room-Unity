@@ -1,3 +1,16 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Fade in intro black object
+// DEFINED EXTERNS: 0
+// RETURNS: line 49 yield return null
+//
+/////////////////////////////////////////////////////////
+
 using UnityEngine;
 
 namespace System.Collections

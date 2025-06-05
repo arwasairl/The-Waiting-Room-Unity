@@ -1,3 +1,16 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Object detection for the room and lamp/siren initiator
+// DEFINED EXTERNS: OnCollision
+// RETURNS: line 58 (void return), line 88 (void return)
+//
+/////////////////////////////////////////////////////////
+
 using UnityEngine;
 using System;
 
@@ -29,7 +42,7 @@ public class Detection : MonoBehaviour
                     audioSource.Stop();
                 }
             }
-            GameObject otherObject = GameObject.Find("audtioScript");
+            GameObject otherObject = GameObject.Find("roomSpeaker");
             if (otherObject != null)
             {
                 AudioSource otherAudioSource = otherObject.GetComponent<AudioSource>();

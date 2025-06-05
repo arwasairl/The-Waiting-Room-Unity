@@ -1,3 +1,16 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Clock incrementer and display
+// DEFINED EXTERNS: 0
+// RETURNS: line 70 (void return)
+//
+/////////////////////////////////////////////////////////
+
 using System;
 using TMPro;
 using UnityEngine;

@@ -1,6 +1,18 @@
+/////////////////////////////////////////////////////////
+//
+// Copyright (c) 2025 by arwasairl
+//
+// This source is provided under the MIT license.
+// This software is provided WITHOUT A WARRANTY.
+//
+// WHAT: Waiting room door lock 
+// DEFINED EXTERNS: Instance
+// RETURNS: 0
+//
+/////////////////////////////////////////////////////////
+
 using UnityEngine;
 using UnityEngine.Audio;
-
 public class DoorLock : MonoBehaviour
 {
     public static DoorLock Instance;
